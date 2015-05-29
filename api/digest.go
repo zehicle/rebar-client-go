@@ -36,6 +36,10 @@ type OCBClient struct {
 
 func (session *OCBClient) Request(method, uri, metatype string, objOut interface{}, objIn interface{}) (err error) {
 
+    if session == nil {
+        return fmt.Errorf("OCB Client Session not set")
+    }
+
     var body io.Reader 
 
     if objIn != nil {
@@ -79,9 +83,9 @@ func (session *OCBClient) Request(method, uri, metatype string, objOut interface
     }
     if objOut !=nil {
         contenttype :=  "application/vnd.crowbar."+metatype+"+json; version=2.0; charset=utf-8"
-	    if resp.Header["Content-Type"][0] != contenttype {
-		    return fmt.Errorf("Content Type Error: Expected [%s] got [%s]", contenttype, resp.Header["Content-Type"][0])
-	    }
+        if resp.Header["Content-Type"][0] != contenttype {
+            return fmt.Errorf("Content Type Error: Expected [%s] got [%s]", contenttype, resp.Header["Content-Type"][0])
+        }
         json.NewDecoder(resp.Body).Decode(objOut)
     }
     return nil
