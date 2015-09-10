@@ -1,6 +1,6 @@
 OpenCrowbawr Golang Client LICENSE:
 
-OpenCrowbar GoLang Client is made available by RackN, Inc under the Apache 2 license.
+DigitalRebar GoLang Client is made available by RackN, Inc under the Apache 2 license.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -14,4 +14,4 @@ OpenCrowbar GoLang Client is made available by RackN, Inc under the Apache 2 lic
 
 ADDITIONAL COMPONENTS:
 
-This code relies on the OpenCrowbar project that may be offered under different licenses.  
+This code relies on the DigitalRebar project that may be offered under different licenses.  

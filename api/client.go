@@ -1,4 +1,4 @@
-package crowbar
+package rebar
 // Apache 2 License 2015 by Rob Hirschfeld for RackN
 
 import (
@@ -13,7 +13,7 @@ var Session *OCBClient
 
 const (
     API_PATH        = "/api/v2/"
-    SSH_KEY_ROLE    = "crowbar-access_keys"
+    SSH_KEY_ROLE    = "rebar-access_keys"
     TARGET_OS       = "provisioner-target_os"
 )
 
