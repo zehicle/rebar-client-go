@@ -1,7 +1,7 @@
-package crowbar
+package rebar
 // Apache 2 License 2015 by Rob Hirschfeld for RackN
 
-type CrowbarDigest struct {
+type RebarDigest struct {
     CSRFToken string `json:"csrf_token"`
     Message   string `json:"message"`
 }
@@ -79,7 +79,7 @@ type NodeRole struct {
     UpdatedAt       string      `json:"updated_at"`
 }
 
-// designed to support Crowbar_Access, but could be used for others
+// designed to support Rebar_Access, but could be used for others
 type NodeAttrib struct {
     ID              int64       `json:"id"`
     Name            string      `json:"name"`
@@ -97,7 +97,7 @@ type NodeAttrib struct {
     UpdatedAt       string      `json:"updated_at"`
 }
 
-// designed to support Crowbar_Access, but could be used for others
+// designed to support Rebar_Access, but could be used for others
 type NodeAttribValue struct {
     Value           map[string]string      `json:"value"`
 }
