@@ -34,6 +34,8 @@ type Node struct {
     Allocated    bool          `json:"allocated"`
     Available    bool          `json:"available"`
     Bootenv      string        `json:"bootenv"`
+    CtrlAddr     string        `json:"node-control-address"`
+    ProviderID   int64         `json:"provider_id"`
     DeploymentID int64         `json:"deployment_id"`
     Order        int64         `json:"order"`
     System       bool          `json:"system"`
